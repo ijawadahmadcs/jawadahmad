@@ -24,7 +24,7 @@ const Header = () => {
 
           <div className="hidden md:flex space-x-8">
             <Link
-              href="/home"
+              href="/"
               className="relative py-2 px-4 text-gray-700 hover:text-blue-600 transition-all duration-300 group"
             >
               Home
@@ -78,7 +78,7 @@ const Header = () => {
       {menuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <Link
-            href="/home"
+            href="/"
             className="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors relative"
           >
             Home
