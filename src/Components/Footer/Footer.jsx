@@ -4,7 +4,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter, F
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-purple-500 via-blue-700 to-purple-700 text-white py-12">
+    <footer className="bg-gradient-to-br from-purple-400 to-blue-500  text-white py-12">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
         

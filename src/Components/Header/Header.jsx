@@ -11,16 +11,11 @@ const Header = () => {
       className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-lg z-50 transition-all duration-300"
       id="navbar"
     >
-
-
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center py-4">
           <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Jawad
           </div>
-
-
-
 
           <div className="hidden md:flex space-x-8">
             <Link
@@ -73,8 +68,6 @@ const Header = () => {
         </div>
       </div>
 
-
-    
       {menuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <Link
