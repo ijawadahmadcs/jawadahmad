@@ -1,8 +1,50 @@
-// app/contact/page.jsx
 "use client";
+import { useState } from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [title, setTitle] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_vwlv43k", // from EmailJS
+        "template_u9y1qcf", // from EmailJS
+        { name, email, title, message },
+        "bXglXsU_p2_2Y1Kqe" // from EmailJS
+      )
+      .then(
+        () => {
+          Swal.fire({
+            title: "Message Sent!",
+            text: "Thanks for reaching out.",
+            icon: "success",
+            confirmButtonColor: "#4f46e5",
+          });
+          setName("");
+          setEmail("");
+          setTitle("");
+          setMessage("");
+        },
+        (error) => {
+          Swal.fire({
+            title: "Failed!",
+            text: "Something went wrong. Please try again.",
+            icon: "error",
+            confirmButtonColor: "#dc2626",
+          });
+          console.error(error);
+        }
+      );
+  };
+
   return (
     <section className="py-20 bg-white/50">
       <div className="max-w-6xl mx-auto px-6">
@@ -11,7 +53,6 @@ export default function Contact() {
         </h2>
 
         <div className="grid md:grid-cols-1 gap-12">
-    
           <div className="space-y-4 text-gray-700">
             <p>
               Feel free to reach out if you have any questions, want to
@@ -32,21 +73,41 @@ export default function Contact() {
             </div>
           </div>
 
-          <form className="space-y-4 bg-white p-6 rounded-xl shadow">
+          <form
+            className="space-y-4 bg-white p-6 rounded-xl shadow"
+            onSubmit={sendEmail}
+          >
             <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full shadow-xl p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
-            />
-            <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               type="email"
               placeholder="Your Email"
               className="w-full shadow-xl p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              required
+            />
+            <input
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              type="text"
+              placeholder="Message Title"
+              className="w-full shadow-xl p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              required
+            />
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              type="text"
+              placeholder="Your Name"
+              className="w-full shadow-xl p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              required
             />
             <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               rows="5"
               placeholder="Your Message"
               className="w-full shadow-xl p-3 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              required
             ></textarea>
             <button
               type="submit"
