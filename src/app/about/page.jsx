@@ -4,8 +4,8 @@ import React from 'react'
 const About = () => {
   return (
     <>
-  
-      <div className="max-w-6xl mx-auto px-6 py-20 bg-white/50">
+   <div className="w-screen dark:bg-white dark:text-black">
+      <div className="max-w-6xl mx-auto px-6 py-20 bg-white/50 dark:bg-white">
    
         <h2 className="mt-8 text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           About Me
@@ -48,6 +48,7 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   )

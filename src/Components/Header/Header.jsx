@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <nav
-      className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-lg z-50 transition-all duration-300"
+      className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-lg z-50 transition-all duration-300 dark:bg-white dark:text-black"
       id="navbar"
     >
       <div className="max-w-6xl mx-auto px-6">

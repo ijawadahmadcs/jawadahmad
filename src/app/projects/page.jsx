@@ -2,9 +2,9 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-white/50">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 mt-8">
+    <section id="projects" className="py-20 bg-white/50 dark:bg-white dark:text-black">
+      <div className="max-w-6xl mx-auto px-6 ">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mt-8">
           My Projects
         </h2>
 

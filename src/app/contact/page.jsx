@@ -46,7 +46,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-20 bg-white/50">
+    <section className="py-20 bg-white/50 dark:bg-white dark:text-black">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mt-8">
           Contact Me
@@ -74,7 +74,7 @@ export default function Contact() {
           </div>
 
           <form
-            className="space-y-4 bg-white p-6 rounded-xl shadow"
+            className="space-y-4 bg-white p-6 rounded-xl shadow dark:bg-white dark:text-black"
             onSubmit={sendEmail}
           >
             <input

@@ -2,8 +2,9 @@ import { FaCode, FaLightbulb, FaUsers } from "react-icons/fa";
 
 export default function Skills() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-20">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-16  mt-8 ">
+    <div className="w-screen dark:bg-white dark:text-black">
+    <div className="max-w-6xl mx-auto px-6 py-20 ">
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mt-8 ">
         My Skills
       </h2>
 
@@ -70,6 +71,7 @@ export default function Skills() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
