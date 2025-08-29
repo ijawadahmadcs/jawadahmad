@@ -6,10 +6,9 @@ import {
   FaMapMarkerAlt,
   FaGithub,
   FaLinkedin,
-  FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
-
+import { BsTwitterX } from "react-icons/bs";
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-purple-400 to-blue-500  text-white py-12">
@@ -48,7 +47,7 @@ export default function Footer() {
             target="_blank"
             className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition transform hover:scale-110"
           >
-            <FaTwitter className="text-xl" />
+            <BsTwitterX className="text-xl" />
           </Link>
           <Link
             href="https://www.instagram.com/ijawadahmad_?igsh=MWk0NTN2eTJwZmo5aA=="
