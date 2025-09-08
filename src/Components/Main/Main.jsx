@@ -6,17 +6,18 @@ const Main = () => {
     <>
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center relative overflow-hidden "
+        className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10 dark:from-blue-600/10 dark:to-purple-600/10" />
-        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl dark:bg-blue-400/20" />
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl dark:bg-purple-400/20" />
+        {/* Background gradients — same for all themes */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10" />
+        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl" />
 
         <div className="text-center z-10 px-6 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
             Hi, I'm Jawad Ahmad
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
+          <p className="text-xl md:text-2xl text-gray-700 mb-8">
             A professional web developer specializing in creating beautiful,
             functional websites and applications.
           </p>

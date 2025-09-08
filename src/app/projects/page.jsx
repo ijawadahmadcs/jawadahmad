@@ -106,6 +106,50 @@ export default function Projects() {
 
           <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl ">
             <div className="relative">
+              <a
+                href="https://ideasplanner.vercel.app/"
+                target="_blank"
+                className="cursor-pointer"
+              >
+                <img
+                  src="images/prog6.png"
+                  alt="IdeasPlanner"
+                  className="w-full h-48 object-cover hover:scale-110 transition-transform"
+                />
+              </a>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-2">UI upgrade</h3>
+              <p className="text-gray-600 mb-4">
+                IdeasPlanner Website — A modern, responsive web application for
+                showcasing and using the IdeasPlanner online design and
+                personalization tool.A clean navigation bar, multi-section
+                footer, and a fully functional contact page. Built with Next.js
+                and Tailwind CSS, it delivers a professional, mobile-friendly
+                experience optimized for both customers and partners.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-blue-400 to   px-2 py-1 rounded text-sm">
+                  Nextjs
+                </span>
+                <span className="bg-yellow-300  px-2 py-1 rounded text-sm">
+                  TailwindCSS
+                </span>
+              </div>
+              <a
+                href="https://github.com/ijawadahmadcs/ideasplanner"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center text-gray-600 hover:text-gray-800"
+              >
+                <FaGithub className="mr-1" /> Code
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl ">
+            <div className="relative">
               <img
                 src="images/prog3.png"
                 alt="Amazon Clone"
@@ -181,7 +225,7 @@ export default function Projects() {
             <div className="relative">
               <img
                 src="images/prog4.jpg"
-                alt="Travel And Tour Management System"
+                alt="Snake Water Gun"
                 className="w-full h-48 object-cover hover:scale-110 transition-transform"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
