@@ -12,18 +12,19 @@ export default function Projects() {
           My Projects
         </h2>
 
+        {/* //project1 */}
         <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 ">
           <div className="bg-white shadow-xl rounded-2xl  hover:shadow-2xl">
             <div className="relative">
-              <Link href={"https://picksyy.vercel.app/"} target="_blank">
-                <img
-                  src="images/prog1.png"
-                  alt="E-commerce Website"
-                  className="w-full h-48 object-cover hover:scale-110 transition-transform"
-                />
-              </Link>
+              <img
+                src="images/prog1.png"
+                alt="E-commerce Website"
+                className="w-full h-48 object-cover hover:scale-110 transition-transform"
+              />
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
             </div>
+
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">E-commerce Website</h3>
               <p className="text-gray-600 mb-4">
@@ -45,26 +46,37 @@ export default function Projects() {
                   JavaScript
                 </span>
               </div>
-              <a
-                href="https://github.com/ijawadahmadcs/e-commerence.git"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-gray-600 hover:text-gray-800"
-              >
-                <FaGithub className="mr-1" /> Code
-              </a>
+              <div className="flex flex-wrap gap-4 flex-row">
+                <a
+                  href="https://github.com/ijawadahmadcs/e-commerence.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-gray-600 hover:text-gray-800"
+                >
+                  <FaGithub className="mr-1" /> Code
+                </a>
+                <a
+                  href="https://picksyy.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 cursor-pointer">
+                    Visit Site
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
 
+          {/* project2 */}
           <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl ">
             <div className="relative">
-              <Link href="https://clustrapp.vercel.app" target="_blank">
-                <img
-                  src="images/prog5.jpg"
-                  alt="Amazon Clone"
-                  className="w-full h-48 object-cover hover:scale-110 transition-transform"
-                />
-              </Link>
+              <img
+                src="images/prog5.jpg"
+                alt="Amazon Clone"
+                className="w-full h-48 object-cover hover:scale-110 transition-transform"
+              />
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
             </div>
             <div className="p-6">
@@ -93,30 +105,36 @@ export default function Projects() {
                   Redux
                 </span>
               </div>
-              <a
-                href="https://github.com/ijawadahmadcs/clustr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center hover:text-gray-800"
-              >
-                <FaGithub className="mr-1" /> Code
-              </a>
+              <div className="flex flex-wrap gap-4 flex-row">
+                <a
+                  href="https://github.com/ijawadahmadcs/clustr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:text-gray-800"
+                >
+                  <FaGithub className="mr-1" /> Code
+                </a>
+                <a
+                  href="https://clustrapp.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 cursor-pointer">
+                    Visit Site
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
 
           <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl ">
             <div className="relative">
-              <a
-                href="https://ideasplanner.vercel.app/"
-                target="_blank"
-                className="cursor-pointer"
-              >
-                <img
-                  src="images/prog6.png"
-                  alt="IdeasPlanner"
-                  className="w-full h-48 object-cover hover:scale-110 transition-transform"
-                />
-              </a>
+              <img
+                src="images/prog6.png"
+                alt="IdeasPlanner"
+                className="w-full h-48 object-cover hover:scale-110 transition-transform"
+              />
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
             </div>
             <div className="p-6">
@@ -137,14 +155,25 @@ export default function Projects() {
                   TailwindCSS
                 </span>
               </div>
-              <a
-                href="https://github.com/ijawadahmadcs/ideasplanner"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-gray-600 hover:text-gray-800"
-              >
-                <FaGithub className="mr-1" /> Code
-              </a>
+              <div className="flex flex-wrap gap-4 flex-row">
+                <a
+                  href="https://github.com/ijawadahmadcs/ideasplanner"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-gray-600 hover:text-gray-800"
+                >
+                  <FaGithub className="mr-1" /> Code
+                </a>
+                <a
+                  href="https://ideasplanner.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 cursor-pointer">
+                    Visit Site
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
 
