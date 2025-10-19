@@ -14,6 +14,106 @@ export default function Projects() {
 
         {/* //project1 */}
         <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 ">
+        <div className="bg-white shadow-xl rounded-2xl  hover:shadow-2xl">
+            <div className="relative">
+              <img
+                src="images/prog7.png"
+                alt="E-commerce Website"
+                className="w-full h-48 object-cover hover:scale-110 transition-transform"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
+            </div>
+
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-2">RisexCreative</h3>
+              <p className="text-gray-600 mb-4">
+                This project is a modern React + Tailwind portfolio section featuring a smooth video showcase with motion animations. It highlights a promotional YouTube video embedded seamlessly with a cinematic gradient overlay and interactive controls. The design focuses on clean UI, subtle animations, and responsiveness, making it ideal for personal or agency portfolios.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-blue-100 px-2 py-1 rounded text-sm">
+                  Next.js
+                </span>
+                <span className="bg-green-100 px-2 py-1 rounded text-sm">
+                  Tailwind
+                </span>
+                <span className="bg-yellow-100 px-2 py-1 rounded text-sm">
+                  JavaScript
+                </span>
+              </div>
+              <div className="flex flex-wrap gap-4 flex-row">
+                <a
+                  href="https://github.com/ijawadahmadcs/risexcreative.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-gray-600 hover:text-gray-800"
+                >
+                  <FaGithub className="mr-1" /> Code
+                </a>
+                <a
+                  href="https://risexcreative.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 cursor-pointer">
+                    Visit Site
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+            <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl ">
+            <div className="relative">
+              <img
+                src="images/prog6.png"
+                alt="IdeasPlanner"
+                className="w-full h-48 object-cover hover:scale-110 transition-transform"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-2">UI upgrade</h3>
+              <p className="text-gray-600 mb-4">
+                IdeasPlanner Website — A modern, responsive web application for
+                showcasing and using the IdeasPlanner online design and
+                personalization tool.A clean navigation bar, multi-section
+                footer, and a fully functional contact page. Built with Next.js
+                and Tailwind CSS, it delivers a professional, mobile-friendly
+                experience optimized for both customers and partners.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-blue-400 to   px-2 py-1 rounded text-sm">
+                  Nextjs
+                </span>
+                <span className="bg-yellow-300  px-2 py-1 rounded text-sm">
+                  TailwindCSS
+                </span>
+              </div>
+              <div className="flex flex-wrap gap-4 flex-row">
+                <a
+                  href="https://github.com/ijawadahmadcs/ideasplanner"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-gray-600 hover:text-gray-800"
+                >
+                  <FaGithub className="mr-1" /> Code
+                </a>
+                <a
+                  href="https://ideasplanner.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="px-4 py-2 cursor-pointer">
+                    Visit Site
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-white shadow-xl rounded-2xl  hover:shadow-2xl">
             <div className="relative">
               <img
@@ -127,55 +227,7 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl ">
-            <div className="relative">
-              <img
-                src="images/prog6.png"
-                alt="IdeasPlanner"
-                className="w-full h-48 object-cover hover:scale-110 transition-transform"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">UI upgrade</h3>
-              <p className="text-gray-600 mb-4">
-                IdeasPlanner Website — A modern, responsive web application for
-                showcasing and using the IdeasPlanner online design and
-                personalization tool.A clean navigation bar, multi-section
-                footer, and a fully functional contact page. Built with Next.js
-                and Tailwind CSS, it delivers a professional, mobile-friendly
-                experience optimized for both customers and partners.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-blue-400 to   px-2 py-1 rounded text-sm">
-                  Nextjs
-                </span>
-                <span className="bg-yellow-300  px-2 py-1 rounded text-sm">
-                  TailwindCSS
-                </span>
-              </div>
-              <div className="flex flex-wrap gap-4 flex-row">
-                <a
-                  href="https://github.com/ijawadahmadcs/ideasplanner"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-gray-600 hover:text-gray-800"
-                >
-                  <FaGithub className="mr-1" /> Code
-                </a>
-                <a
-                  href="https://ideasplanner.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="px-4 py-2 cursor-pointer">
-                    Visit Site
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+        
 
           <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl ">
             <div className="relative">
