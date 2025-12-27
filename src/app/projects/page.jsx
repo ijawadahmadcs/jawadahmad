@@ -1,340 +1,190 @@
-import Link from "next/link";
+"use client";
+import React from "react";
+import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
+
+const projects = [
+  {
+    id: "risexcreative",
+    title: "RisexCreative",
+    description:
+      "A modern portfolio section featuring a cinematic video showcase and polished UI. Built with Next.js and Tailwind CSS — focused on responsiveness and subtle motion.",
+    img: "/images/prog7.png",
+    tags: ["Next.js", "Tailwind CSS", "JavaScript"],
+    repo: "https://github.com/ijawadahmadcs/risexcreative",
+    live: "https://risexcreative.com/",
+  },
+  {
+    id: "ui-upgrade",
+    title: "IdeasPlanner (UI upgrade)",
+    description:
+      "UI refresh for IdeasPlanner — improved navigation, footer, and contact flows. Built with Next.js and Tailwind CSS for a professional, mobile-friendly experience.",
+    img: "/images/prog6.png",
+    tags: ["Next.js", "Tailwind CSS"],
+    repo: "https://github.com/ijawadahmadcs/ideasplanner",
+    live: "https://ideasplanner.vercel.app",
+  },
+  {
+    id: "ecommerce",
+    title: "E-commerce Website",
+    description:
+      "Responsive e-commerce front-end with product listings, cart UX and theme switching. Built with Next.js and Tailwind CSS — focuses on clarity and performance.",
+    img: "/images/prog1.png",
+    tags: ["Next.js", "Tailwind CSS", "JavaScript"],
+    repo: "https://github.com/ijawadahmadcs/e-commerence.git",
+    live: "https://picksyy.vercel.app",
+  },
+  {
+    id: "clustr",
+    title: "Clustr — Social Media App",
+    description:
+      "Twitter-like social platform built with Next.js. Supports auth, posts, likes, and comments with a minimal responsive UI.",
+    img: "/images/prog5.jpg",
+    tags: ["Next.js", "Tailwind CSS"],
+    repo: "https://github.com/ijawadahmadcs/clustr",
+    live: "https://clustrapp.vercel.app",
+  },
+  {
+    id: "amazon-clone",
+    title: "Amazon Clone",
+    description:
+      "Front-end replica of Amazon's homepage to practice layout, design and responsive grid patterns using static assets.",
+    img: "/images/prog3.png",
+    tags: ["HTML5", "Tailwind CSS"],
+    repo: "https://github.com/ijawadahmadcs/Amazon.git",
+    live: "",
+  },
+  {
+    id: "travel-system",
+    title: "Travel & Tour Management",
+    description:
+      "A management system featuring login/auth, package and booking CRUD operations and tabular management UI.",
+    img: "/images/prog2.jpg",
+    tags: ["C++"],
+    repo: "https://github.com/ijawadahmadcs/travel-and-tour-management.git",
+    live: "",
+  },
+  {
+    id: "snake-game",
+    title: "Snake Water Gun",
+    description:
+      "Simple Python CLI game demonstrating game logic and randomization — practice project for algorithmic thinking.",
+    img: "/images/prog4.jpg",
+    tags: ["Python"],
+    repo: "https://github.com/ijawadahmadcs/snake-water-gun-game",
+    live: "",
+  },
+  {
+    id: "rydex",
+    title: "Rydex",
+    description:
+      "Rydex is a university-level ride-sharing application implemented in Java with a MySQL backend. It aims to connect riders and drivers with a simple booking workflow, supporting payments, feedback, vehicle and shifts management, and two UI modes: a Swing-based GUI and a CLI version.",
+    img: "/images/prog8.png",
+    tags: ["Java", "Java Swing", "MySQL"],
+    repo: "https://github.com/ijawadahmadcs/rydex",
+    live: "",
+  },
+  {
+    id: "net-spector",
+    title: "Net-Spector",
+    description:
+      "Net-Spector is a web-based network analyzer that lets you visualize live packet traffic across all five OSI model layers—from physical hex data to application protocols—built with Next.js and Node.js to transform networking theory into interactive, real-time insight.",
+    img: "/images/prog9.png",
+    tags: ["Python"],
+    repo: "https://github.com/ijawadahmadcs/net-spector",
+    live: "https://net-spector.vercel.app/",
+  },
+];
 
 export default function Projects() {
   return (
-    <section
-      id="projects"
-      className="py-20 bg-white/50 dark:bg-white dark:text-black"
-    >
-      <div className="max-w-6xl mx-auto px-6 ">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mt-8">
+    <section id="projects" className="bg-[#0b0d12] text-slate-200 py-24">
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-center text-4xl md:text-5xl font-mono font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400">
           My Projects
         </h2>
 
-        {/* //project1 */}
-        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 ">
-        <div className="bg-white shadow-xl rounded-2xl  hover:shadow-2xl">
-            <div className="relative">
-              <img
-                src="images/prog7.png"
-                alt="E-commerce Website"
-                className="w-full h-48 object-cover hover:scale-110 transition-transform"
-              />
+        <p className="mt-4 text-center text-sm text-slate-400 max-w-2xl mx-auto">
+          Selected projects showcasing front-end work, UI upgrades and
+          full-stack experiments.
+        </p>
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
-            </div>
-
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">RisexCreative</h3>
-              <p className="text-gray-600 mb-4">
-                This project is a modern React + Tailwind portfolio section featuring a smooth video showcase with motion animations. It highlights a promotional YouTube video embedded seamlessly with a cinematic gradient overlay and interactive controls. The design focuses on clean UI, subtle animations, and responsiveness, making it ideal for personal or agency portfolios.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-blue-100 px-2 py-1 rounded text-sm">
-                  Next.js
-                </span>
-                <span className="bg-green-100 px-2 py-1 rounded text-sm">
-                  Tailwind
-                </span>
-                <span className="bg-yellow-100 px-2 py-1 rounded text-sm">
-                  JavaScript
-                </span>
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((p) => (
+            <article
+              key={p.id}
+              className="group bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-1"
+              aria-labelledby={`${p.id}-title`}
+            >
+              <div className="relative w-full h-48 bg-slate-900">
+                <Image
+                  src={p.img}
+                  alt={p.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  priority={false}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
-              <div className="flex flex-wrap gap-4 flex-row">
-                <a
-                  href="https://github.com/ijawadahmadcs/risexcreative.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-gray-600 hover:text-gray-800"
+
+              <div className="p-5">
+                <h3
+                  id={`${p.id}-title`}
+                  className="text-lg font-semibold text-slate-100"
                 >
-                  <FaGithub className="mr-1" /> Code
-                </a>
-                <a
-                  href="https://risexcreative.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="px-4 py-2 cursor-pointer">
-                    Visit Site
-                  </button>
-                </a>
+                  {p.title}
+                </h3>
+                <p className="mt-2 text-sm text-slate-300 line-clamp-4">
+                  {p.description}
+                </p>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {p.tags.map((t) => (
+                    <span
+                      key={t}
+                      className="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-900/60 border border-slate-700"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="mt-5 flex items-center gap-3">
+                  <a
+                    href={p.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Open ${p.title} repository`}
+                    className="inline-flex items-center gap-2 text-xs font-medium bg-[#0b0f19] hover:bg-[#0b0f19] text-white px-3 py-1.5 rounded-md transition transform hover:scale-105"
+                  >
+                    <FaGithub />
+                    <span>Code</span>
+                  </a>
+
+                  {p.live ? (
+                    <a
+                      href={p.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Open live site for ${p.title}`}
+                      className="text-xs px-3 py-1.5 rounded-md border border-slate-700 text-slate-200 hover:bg-slate-800/40 transition"
+                    >
+                      Visit Site
+                    </a>
+                  ) : (
+                    <button
+                      disabled
+                      className="text-xs px-3 py-1.5 rounded-md border border-slate-700 text-slate-500 bg-slate-900/30 cursor-not-allowed"
+                      aria-hidden="true"
+                    >
+                      No Live Demo
+                    </button>
+                  )}
+                </div>
               </div>
-            </div>
-          </div>
-
-
-            <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl ">
-            <div className="relative">
-              <img
-                src="images/prog6.png"
-                alt="IdeasPlanner"
-                className="w-full h-48 object-cover hover:scale-110 transition-transform"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">UI upgrade</h3>
-              <p className="text-gray-600 mb-4">
-                IdeasPlanner Website — A modern, responsive web application for
-                showcasing and using the IdeasPlanner online design and
-                personalization tool.A clean navigation bar, multi-section
-                footer, and a fully functional contact page. Built with Next.js
-                and Tailwind CSS, it delivers a professional, mobile-friendly
-                experience optimized for both customers and partners.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-blue-400 to   px-2 py-1 rounded text-sm">
-                  Nextjs
-                </span>
-                <span className="bg-yellow-300  px-2 py-1 rounded text-sm">
-                  TailwindCSS
-                </span>
-              </div>
-              <div className="flex flex-wrap gap-4 flex-row">
-                <a
-                  href="https://github.com/ijawadahmadcs/ideasplanner"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-gray-600 hover:text-gray-800"
-                >
-                  <FaGithub className="mr-1" /> Code
-                </a>
-                <a
-                  href="https://ideasplanner.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="px-4 py-2 cursor-pointer">
-                    Visit Site
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white shadow-xl rounded-2xl  hover:shadow-2xl">
-            <div className="relative">
-              <img
-                src="images/prog1.png"
-                alt="E-commerce Website"
-                className="w-full h-48 object-cover hover:scale-110 transition-transform"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
-            </div>
-
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">E-commerce Website</h3>
-              <p className="text-gray-600 mb-4">
-                This project is a modern responsive e-commerce website built
-                with Next.js and Tailwind CSS, featuring product browsing,
-                category pages, cart management, and theme switching, product
-                listings, shopping cart, and secure payment integration.. It
-                provides a clean UI with authentication and a fully functional
-                shopping experience.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-blue-100 px-2 py-1 rounded text-sm">
-                  Next.js
-                </span>
-                <span className="bg-green-100 px-2 py-1 rounded text-sm">
-                  Tailwind
-                </span>
-                <span className="bg-yellow-100 px-2 py-1 rounded text-sm">
-                  JavaScript
-                </span>
-              </div>
-              <div className="flex flex-wrap gap-4 flex-row">
-                <a
-                  href="https://github.com/ijawadahmadcs/e-commerence.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-gray-600 hover:text-gray-800"
-                >
-                  <FaGithub className="mr-1" /> Code
-                </a>
-                <a
-                  href="https://picksyy.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="px-4 py-2 cursor-pointer">
-                    Visit Site
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* project2 */}
-          <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl ">
-            <div className="relative">
-              <img
-                src="images/prog5.jpg"
-                alt="Amazon Clone"
-                className="w-full h-48 object-cover hover:scale-110 transition-transform"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">
-                Social Media App (Clustr)
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Clustr is a Twitter-like social platform built with Next.js,
-                Firebase, and Redux. It allows users to sign up with
-                Email/Google, create posts, like/unlike, comment, and explore
-                content. Guests can only read posts, while authenticated users
-                get full access. The app features a responsive, minimal UI and
-                secure authentication.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-green-100  px-2 py-1 rounded text-sm">
-                  Nextjs
-                </span>
-                <span className="bg-gray-100  px-2 py-1 rounded text-sm">
-                  Tailwind CSS
-                </span>
-                <span className="bg-yellow-100  px-2 py-1 rounded text-sm">
-                  Firebase
-                </span>
-                <span className="bg-red-200  px-2 py-1 rounded text-sm">
-                  Redux
-                </span>
-              </div>
-              <div className="flex flex-wrap gap-4 flex-row">
-                <a
-                  href="https://github.com/ijawadahmadcs/clustr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center hover:text-gray-800"
-                >
-                  <FaGithub className="mr-1" /> Code
-                </a>
-                <a
-                  href="https://clustrapp.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="px-4 py-2 cursor-pointer">
-                    Visit Site
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        
-
-          <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl ">
-            <div className="relative">
-              <img
-                src="images/prog3.png"
-                alt="Amazon Clone"
-                className="w-full h-48 object-cover hover:scale-110 transition-transform"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Amazon Clone</h3>
-              <p className="text-gray-600 mb-4">
-                A Front-end clone of Amazon's homepage, created with plain HTML
-                and image assets. It mainly focuses on replicating the layout,
-                design, and structure of Amazon's interface as a practice
-                project, without any back-end or dynamic e-commerce
-                functionality
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-green-100  px-2 py-1 rounded text-sm">
-                  HTML5
-                </span>
-                <span className="bg-gray-100  px-2 py-1 rounded text-sm">
-                  Tailwind CSS
-                </span>
-              </div>
-              <a
-                href="https://github.com/ijawadahmadcs/Amazon.git"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center hover:text-gray-800"
-              >
-                <FaGithub className="mr-1" /> Code
-              </a>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl ">
-            <div className="relative">
-              <img
-                src="images/prog2.jpg"
-                alt="Travel And Tour Management System"
-                className="w-full h-48 object-cover hover:scale-110 transition-transform"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
-            </div>
-
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">
-                Travel And Tour Management System
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Travel Management System with login authentication, offering
-                features like customer, package, and booking management. It
-                allows adding, viewing, searching, and deleting customer
-                records, package records, booking records, displaying details in
-                a structured table format.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-black text-white px-2 py-1 rounded text-sm">
-                  C++
-                </span>
-              </div>
-              <a
-                href="https://github.com/ijawadahmadcs/travel-and-tour-management.git"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-gray-600 hover:text-gray-800"
-              >
-                <FaGithub className="mr-1" /> Code
-              </a>
-            </div>
-          </div>
-          <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl ">
-            <div className="relative">
-              <img
-                src="images/prog4.jpg"
-                alt="Snake Water Gun"
-                className="w-full h-48 object-cover hover:scale-110 transition-transform"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Snake Water Gun</h3>
-              <p className="text-gray-600 mb-4">
-                This Python project is a simple Snake-Water-Gun game where
-                players choose between snake (0), water (1), or gun (2) to
-                compete against the computer's random selection. The game tracks
-                rounds, declares winners based on the rules (e.g., gun beats
-                snake, water beats gun), and handles invalid inputs
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-gradient-to-r from-blue-400 to bg-yellow-300  px-2 py-1 rounded text-sm">
-                  Python
-                </span>
-              </div>
-              <a
-                href="https://github.com/ijawadahmadcs/snake-water-gun-game"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-gray-600 hover:text-gray-800"
-              >
-                <FaGithub className="mr-1" /> Code
-              </a>
-            </div>
-          </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>

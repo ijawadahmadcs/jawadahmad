@@ -1,77 +1,114 @@
+"use client";
 import { FaCode, FaLightbulb, FaUsers } from "react-icons/fa";
+import React from "react";
+
+const skillCards = [
+  {
+    id: "frontend",
+    icon: FaCode,
+    title: "Frontend Development",
+    desc: "Modern frontend technologies & frameworks for performant UIs.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Next.js"],
+    level: 92,
+  },
+  {
+    id: "languages",
+    icon: FaLightbulb,
+    title: "Programming Languages",
+    desc: "Proficient in multiple languages for building reliable systems.",
+    tags: ["JavaScript", "Java", "C++"],
+    level: 84,
+  },
+  {
+    id: "frameworks",
+    icon: FaUsers,
+    title: "Frameworks & Tooling",
+    desc: "Cutting-edge frameworks and developer tools for fast iteration.",
+    tags: ["Next.js", "Tailwind CSS", "Git"],
+    level: 88,
+  },
+];
 
 export default function Skills() {
   return (
-    <div className="w-screen dark:bg-white dark:text-black">
-    <div className="max-w-6xl mx-auto px-6 py-20 ">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mt-8 ">
-        My Skills
-      </h2>
+    <section
+      id="skills"
+      className="bg-[#0b0d12] text-slate-200 py-20"
+      aria-labelledby="skills-heading"
+    >
+      <div className="max-w-6xl mx-auto px-6">
+        <h2
+          id="skills-heading"
+          className="text-center text-4xl md:text-5xl font-mono font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400"
+        >
+          My Skills
+        </h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-9">
-        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-transform ">
-          <FaCode className="text-blue-800 w-12 h-12 mb-6" />
-          <h3 className="text-2xl font-bold mb-4">Frontend Development</h3>
-          <p className="text-gray-600 mb-4">
-            Modern frontend technologies and frameworks for creating engaging
-            user experiences.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <span className="bg-blue-100  px-3 py-1 rounded-full text-sm">
-              HTML5
-            </span>
-            <span className="bg-green-100  px-3 py-1 rounded-full text-sm">
-              CSS3
-            </span>
-            <span className="bg-yellow-100  px-3 py-1 rounded-full text-sm">
-              JavaScript
-            </span>
-            <span className="bg-black text-white px-3 py-1 rounded-full text-sm">
-              Next.js
-            </span>
-          </div>
-        </div>
+        <p className="mt-4 text-center text-sm text-slate-400 max-w-2xl mx-auto">
+          Practical expertise focused on shipping production-ready applications
+          with performance and developer experience in mind.
+        </p>
 
-        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-transform ">
-          <FaLightbulb className="text-purple-800 w-12 h-12 mb-6" />
-          <h3 className="text-2xl font-bold mb-4">Programming Languages</h3>
-          <p className="text-gray-600 mb-4">
-            Proficient in multiple programming languages for diverse project
-            needs.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <span className="bg-yellow-100  px-3 py-1 rounded-full text-sm">
-              JavaScript
-            </span>
-            <span className="bg-purple-200  px-3 py-1 rounded-full text-sm">
-              Python
-            </span>
-            <span className="bg-blue-100 px-3 py-1 rounded-full text-sm">
-              C++
-            </span>
-          </div>
-        </div>
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {skillCards.map((card) => {
+            const Icon = card.icon;
+            return (
+              <article
+                key={card.id}
+                className="relative group bg-slate-800/60 border border-slate-700 rounded-2xl p-6 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all focus-within:-translate-y-1"
+                tabIndex={0}
+                aria-labelledby={`${card.id}-title`}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 text-black inline-flex">
+                    <Icon className="w-5 h-5" />
+                  </div>
 
-        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-transform ">
-          <FaUsers className="text-green-800 w-12 h-12 mb-6" />
-          <h3 className="text-2xl font-bold mb-4">Modern Frameworks</h3>
-          <p className="text-gray-600 mb-4">
-            Cutting-edge frameworks and tools for rapid development.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <span className="bg-black text-white px-3 py-1 rounded-full text-sm">
-              Next.js
-            </span>
-            <span className="bg-cyan-100  px-3 py-1 rounded-full text-sm">
-              Tailwind CSS
-            </span>
-            <span className="bg-gray-100  px-3 py-1 rounded-full text-sm">
-              Flutter
-            </span>
-          </div>
+                  <div className="flex-1">
+                    <h3
+                      id={`${card.id}-title`}
+                      className="text-lg font-semibold text-slate-100"
+                    >
+                      {card.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-slate-300">{card.desc}</p>
+                  </div>
+                </div>
+
+                {/* Tags */}
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {card.tags.map((t) => (
+                    <span
+                      key={t}
+                      className="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-900 border border-slate-700"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="mt-5">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-slate-300 font-medium">
+                      Proficiency
+                    </span>
+                    <span className="text-xs text-slate-400">
+                      {card.level}%
+                    </span>
+                  </div>
+
+                  <div className="mt-2 w-full h-2 rounded-full bg-slate-700 overflow-hidden">
+                    <div
+                      className="h-2 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 transition-all duration-1000 ease-out"
+                      style={{ width: `${card.level}%` }}
+                    />
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
-    </div>
-    </div>
+    </section>
   );
 }

@@ -1,44 +1,70 @@
-import Link from "next/link";
 import React from "react";
+
+const stack = [
+  "Next.js",
+  "React",
+  "JavaScript (ES6+)",
+  "Tailwind CSS",
+  "HTML5",
+  "Python",
+  "C++",
+];
 
 const Main = () => {
   return (
-    <>
-      <section
-        id="home"
-        className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white"
-      >
-        {/* Background gradients — same for all themes */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10" />
-        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl" />
+    <section
+      id="home"
+      className="min-h-screen bg-[#0b0f19] text-slate-100 px-6 pt-32"
+    >
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">
+          Jawad Ahmad
+        </h1>
 
-        <div className="text-center z-10 px-6 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
-            Hi, I'm Jawad Ahmad
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8">
-            A professional web developer specializing in creating beautiful,
-            functional websites and applications.
-          </p>
+        <p className="mt-3 text-xl text-slate-300">Frontend Developer</p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold transition transform hover:scale-105 shadow-lg"
-            >
-              Get in touch
-            </Link>
-            <Link
-              href="/projects"
-              className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full font-semibold transition transform hover:scale-105"
-            >
-              View My Work
-            </Link>
+        <p className="mt-6 max-w-2xl text-slate-400 text-base leading-relaxed">
+          Passionate about crafting engaging and user-friendly web experiences,
+          I specialize in front-end development using modern technologies like
+          React and Next.js. With a keen eye for design and detail, I strive to
+          build responsive, accessible, and high-performance websites that not
+          only look great but also deliver seamless user experiences.
+        </p>
+
+        <div className="mt-10">
+          <h2 className="text-sm uppercase tracking-wide text-slate-500 mb-4">
+            Tech Stack
+          </h2>
+
+          <div className="flex flex-wrap gap-3 max-w-3xl">
+            {stack.map((tech) => (
+              <span
+                key={tech}
+                className="text-sm text-slate-300 border border-slate-800 px-3 py-1.5 rounded-md hover:border-slate-600 transition"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
         </div>
-      </section>
-    </>
+
+        <div className="mt-12 flex flex-wrap gap-6">
+          <a
+            href="#projects"
+            className="text-sm font-medium text-slate-100 underline underline-offset-4 hover:text-white transition"
+          >
+            View Projects
+          </a>
+
+          <a
+            href="#contact"
+            className="text-sm font-medium text-slate-100 underline underline-offset-4 hover:text-white transition"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+    </section>
   );
 };
 
