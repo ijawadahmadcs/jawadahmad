@@ -9,7 +9,6 @@ const skillCards = [
     title: "Frontend Development",
     desc: "Modern frontend technologies & frameworks for performant UIs.",
     tags: ["HTML5", "CSS3", "JavaScript", "Next.js"],
-    level: 92,
   },
   {
     id: "languages",
@@ -17,7 +16,6 @@ const skillCards = [
     title: "Programming Languages",
     desc: "Proficient in multiple languages for building reliable systems.",
     tags: ["JavaScript", "Java", "C++"],
-    level: 84,
   },
   {
     id: "frameworks",
@@ -25,7 +23,6 @@ const skillCards = [
     title: "Frameworks & Tooling",
     desc: "Cutting-edge frameworks and developer tools for fast iteration.",
     tags: ["Next.js", "Tailwind CSS", "Git"],
-    level: 88,
   },
 ];
 
@@ -85,24 +82,6 @@ export default function Skills() {
                       {t}
                     </span>
                   ))}
-                </div>
-
-                <div className="mt-5">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs text-slate-300 font-medium">
-                      Proficiency
-                    </span>
-                    <span className="text-xs text-slate-400">
-                      {card.level}%
-                    </span>
-                  </div>
-
-                  <div className="mt-2 w-full h-2 rounded-full bg-slate-700 overflow-hidden">
-                    <div
-                      className="h-2 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 transition-all duration-1000 ease-out"
-                      style={{ width: `${card.level}%` }}
-                    />
-                  </div>
                 </div>
               </article>
             );

@@ -51,16 +51,29 @@ export default function About() {
 
             <div className="text-slate-300 space-y-4 leading-relaxed">
               <p>
-                I'm Jawad — a frontend engineer focused on performance,
-                accessibility, and developer experience. I build pragmatic UIs
-                and ship reliable, maintainable systems using Next.js and modern
-                web platform APIs.
+                Hi, I`m Jawad Ahmad, a passionate web developer who loves
+                turning ideas into real, functional websites. I specialize in
+                building clean, responsive, and user-friendly web experiences
+                using modern technologies like HTML, CSS, JavaScript, and
+                Next.js.
               </p>
 
               <p>
-                My approach emphasizes clean architecture, measurable
-                performance, and collaboration. I enjoy mentoring teammates and
-                turning product problems into practical engineering solutions.
+                I enjoy working on real-world projects that challenge my skills
+                and help me grow as a developer. From creating simple static
+                pages to developing dynamic web applications, I focus on writing
+                clean code, following best practices, and delivering
+                high-quality results.
+              </p>
+              <p>
+                My goal is to continuously learn new technologies, improve my
+                problem-solving skills, and build products that make a positive
+                impact. I`m always open to new opportunities, collaborations,
+                and exciting projects.
+              </p>
+              <p>
+                When I`m not coding, I enjoy exploring new tech trends and
+                improving my development workflow.
               </p>
             </div>
 
@@ -72,6 +85,7 @@ export default function About() {
                 "HTML5",
                 "Python",
                 "C++",
+                "Java",
               ].map((t) => (
                 <span
                   key={t}

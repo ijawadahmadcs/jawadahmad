@@ -8,6 +8,7 @@ const stack = [
   "HTML5",
   "Python",
   "C++",
+  "Java",
 ];
 
 const Main = () => {

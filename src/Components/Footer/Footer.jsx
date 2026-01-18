@@ -39,8 +39,8 @@ export default function Footer() {
             </div>
 
             <p className="mt-4 text-sm text-slate-300 max-w-xs">
-              I build fast, accessible frontends with a focus on DX and
-              performance. Reach out for collaborations or freelance work.
+              I build fast, accessible frontends with a focus on performance.
+              Reach out for collaborations or freelance work.
             </p>
 
             <a
@@ -103,7 +103,7 @@ export default function Footer() {
                 href="https://github.com/ijawadahmadcs"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="GitHub — Jawad Ahmad"
+                aria-label="GitHub - Jawad Ahmad"
                 className="p-3 rounded-full bg-slate-800/50 hover:bg-slate-700/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 transition transform hover:scale-105"
               >
                 <FaGithub className="text-slate-100" />
@@ -113,7 +113,7 @@ export default function Footer() {
                 href="http://www.linkedin.com/in/ijawadahmadcs"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="LinkedIn — Jawad Ahmad"
+                aria-label="LinkedIn - Jawad Ahmad"
                 className="p-3 rounded-full bg-slate-800/50 hover:bg-slate-700/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 transition transform hover:scale-105"
               >
                 <FaLinkedin className="text-slate-100" />
@@ -123,7 +123,7 @@ export default function Footer() {
                 href="https://x.com/sheikhjawadx?t=pC1wu171p5rKoh7kd58eWg&s=09"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="X (Twitter) — Jawad Ahmad"
+                aria-label="X (Twitter) - Jawad Ahmad"
                 className="p-3 rounded-full bg-slate-800/50 hover:bg-slate-700/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 transition transform hover:scale-105"
               >
                 <BsTwitterX className="text-slate-100" />
@@ -133,7 +133,7 @@ export default function Footer() {
                 href="https://www.instagram.com/ijawadahmad_?igsh=MWk0NTN2eTJwZmo5aA=="
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram — Jawad Ahmad"
+                aria-label="Instagram - Jawad Ahmad"
                 className="p-3 rounded-full bg-slate-800/50 hover:bg-slate-700/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 transition transform hover:scale-105"
               >
                 <FaInstagram className="text-slate-100" />
@@ -154,7 +154,7 @@ export default function Footer() {
 
         <div className="mt-8 border-t border-slate-800/50 pt-6 text-center text-xs text-slate-400">
           <div>
-            © {new Date().getFullYear()} Jawad Ahmad — Built with Next.js &
+            © {new Date().getFullYear()} Jawad Ahmad - Built with Next.js &
             Tailwind CSS
           </div>
         </div>

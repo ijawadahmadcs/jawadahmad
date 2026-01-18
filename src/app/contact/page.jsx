@@ -3,16 +3,6 @@ import { useState } from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import emailjs from "emailjs-com";
 
-/**
- * Contact component — updated to the dark technical theme
- * - Dark, high-contrast layout consistent with the rest of the site
- * - Accessible form with aria-live status, client-side validation, honeypot anti-spam
- * - Loading / success / error states shown inline (no external alert lib required)
- * - Keeps your existing EmailJS setup (service/template/user IDs retained from original)
- *
- * Replace EmailJS values with env-based values if you prefer (not shown here).
- */
-
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -33,16 +23,13 @@ export default function Contact() {
   const sendEmail = async (e) => {
     e.preventDefault();
 
-    // basic client-side validation
     if (!name || !email || !title || !message) {
       setErrorMsg("Please complete all fields.");
       setStatus("error");
       return;
     }
 
-    // honeypot check
     if (botField) {
-      // silently ignore spam submissions
       return;
     }
 
@@ -51,7 +38,7 @@ export default function Contact() {
 
     try {
       await emailjs.send(
-        "service_vwlv43k", // keep existing values or replace with your own
+        "service_vwlv43k",
         "template_u9y1qcf",
         { name, email, title, message },
         "bXglXsU_p2_2Y1Kqe"
@@ -74,8 +61,8 @@ export default function Contact() {
         </h2>
 
         <p className="mt-3 text-center text-sm text-slate-400 max-w-2xl mx-auto">
-          Have a project or a question? Send a message — I reply to most emails
-          within 48 hours.
+          Have a project or a question? Send a message - I reply to most emails
+          within 24 hours.
         </p>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -114,13 +101,13 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://www.google.com/maps/search/Islamabad+Pakistan"
+                href="https://www.google.com/maps/search/Wah Cantt+Pakistan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-slate-200 hover:text-white transition"
               >
                 <FaMapMarkerAlt className="text-slate-400" />
-                <span>Islamabad, Pakistan</span>
+                <span>Wah Cantt, Pakistan</span>
               </a>
             </div>
 
@@ -135,7 +122,6 @@ export default function Contact() {
             </div>
           </aside>
 
-          {/* Form */}
           <form
             onSubmit={sendEmail}
             className="md:col-span-2 bg-[#0b1220] border border-slate-800 rounded-2xl p-6 space-y-4"
@@ -149,7 +135,7 @@ export default function Contact() {
             <div role="status" aria-live="polite" className="min-h-[1.5rem]">
               {status === "success" && (
                 <div className="rounded-md bg-emerald-600/10 border border-emerald-600 text-emerald-300 px-4 py-2 text-sm">
-                  Message sent — thank you! I'll reply soon.
+                  Message sent - thank you! I'll reply soon.
                 </div>
               )}
               {status === "error" && (
@@ -159,7 +145,6 @@ export default function Contact() {
               )}
             </div>
 
-            {/* Honeypot field (hidden) */}
             <input
               type="text"
               name="bot-field"
@@ -190,7 +175,7 @@ export default function Contact() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="email@example.com"
+                  placeholder="enter email"
                   required
                   className="mt-1 w-full rounded-md bg-[#0b1220] border border-slate-700 px-3 py-2 text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                 />
@@ -240,7 +225,7 @@ export default function Contact() {
               </button>
 
               <div className="ml-auto text-xs text-slate-400">
-                I reply within ~48 hours
+                I reply within ~24 hours
               </div>
             </div>
           </form>

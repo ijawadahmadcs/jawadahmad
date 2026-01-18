@@ -8,7 +8,7 @@ const projects = [
     id: "risexcreative",
     title: "RisexCreative",
     description:
-      "A modern portfolio section featuring a cinematic video showcase and polished UI. Built with Next.js and Tailwind CSS — focused on responsiveness and subtle motion.",
+      "A modern portfolio section featuring a cinematic video showcase and polished UI. Built with Next.js and Tailwind CSS - focused on responsiveness and subtle motion.",
     img: "/images/prog7.png",
     tags: ["Next.js", "Tailwind CSS", "JavaScript"],
     repo: "https://github.com/ijawadahmadcs/risexcreative",
@@ -18,7 +18,7 @@ const projects = [
     id: "ui-upgrade",
     title: "IdeasPlanner (UI upgrade)",
     description:
-      "UI refresh for IdeasPlanner — improved navigation, footer, and contact flows. Built with Next.js and Tailwind CSS for a professional, mobile-friendly experience.",
+      "UI refresh for IdeasPlanner - improved navigation, footer, and contact flows. Built with Next.js and Tailwind CSS for a professional, mobile-friendly experience.",
     img: "/images/prog6.png",
     tags: ["Next.js", "Tailwind CSS"],
     repo: "https://github.com/ijawadahmadcs/ideasplanner",
@@ -28,7 +28,7 @@ const projects = [
     id: "ecommerce",
     title: "E-commerce Website",
     description:
-      "Responsive e-commerce front-end with product listings, cart UX and theme switching. Built with Next.js and Tailwind CSS — focuses on clarity and performance.",
+      "Responsive e-commerce front-end with product listings, cart UX and theme switching. Built with Next.js and Tailwind CSS - focuses on clarity and performance.",
     img: "/images/prog1.png",
     tags: ["Next.js", "Tailwind CSS", "JavaScript"],
     repo: "https://github.com/ijawadahmadcs/e-commerence.git",
@@ -36,7 +36,7 @@ const projects = [
   },
   {
     id: "clustr",
-    title: "Clustr — Social Media App",
+    title: "Clustr - Social Media App",
     description:
       "Twitter-like social platform built with Next.js. Supports auth, posts, likes, and comments with a minimal responsive UI.",
     img: "/images/prog5.jpg",
@@ -68,7 +68,7 @@ const projects = [
     id: "snake-game",
     title: "Snake Water Gun",
     description:
-      "Simple Python CLI game demonstrating game logic and randomization — practice project for algorithmic thinking.",
+      "Simple Python CLI game demonstrating game logic and randomization - practice project for algorithmic thinking.",
     img: "/images/prog4.jpg",
     tags: ["Python"],
     repo: "https://github.com/ijawadahmadcs/snake-water-gun-game",
@@ -88,7 +88,7 @@ const projects = [
     id: "net-spector",
     title: "Net-Spector",
     description:
-      "Net-Spector is a web-based network analyzer that lets you visualize live packet traffic across all five OSI model layers—from physical hex data to application protocols—built with Next.js and Node.js to transform networking theory into interactive, real-time insight.",
+      "Net-Spector is a web-based network analyzer that lets you visualize live packet traffic across all five OSI model layers-from physical hex data to application protocols-built with Next.js and Node.js to transform networking theory into interactive, real-time insight.",
     img: "/images/prog9.png",
     tags: ["Python"],
     repo: "https://github.com/ijawadahmadcs/net-spector",
