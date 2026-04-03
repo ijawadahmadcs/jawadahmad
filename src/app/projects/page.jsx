@@ -5,6 +5,16 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
+    id: "pixeltopen",
+    title: "PixelToPen",
+    description:
+      "A web application that converts typed text, PDF, or DOCX files into realistic handwritten assignment pages, The application features notebook-style page generation, handwriting font rendering, and PDF export functionality implemented using Python. I designed and built a modern, responsive user interface using Next.js and Tailwind CSS, and deployed the project on Vercel and Railway for seamless access.",
+    img: "/images/prog10.jpeg",
+    tags: ["Next.js", "Tailwind CSS", "JavaScript", "Python", "Vercel","Railway"],
+    repo: "https://github.com/ijawadahmadcs/pixeltopen",
+    live: "https://pixeltopen.vercel.app/",
+  },
+  {
     id: "risexcreative",
     title: "RisexCreative",
     description:
