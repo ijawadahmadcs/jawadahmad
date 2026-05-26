@@ -84,7 +84,7 @@ function CertificationsSection() {
 
               {/* Timeline Dot */}
               <div
-                className={`absolute -left-[9px] top-1 w-4 h-4 rounded-full ${dot} ${glow}`}
+                className={`absolute -left-2.25 top-1 w-4 h-4 rounded-full ${dot} ${glow}`}
                 aria-hidden="true"
               />
 

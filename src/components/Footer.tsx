@@ -2,7 +2,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaArrowUp,
-  FaHeart,
   FaInstagram,
 } from "react-icons/fa";
 

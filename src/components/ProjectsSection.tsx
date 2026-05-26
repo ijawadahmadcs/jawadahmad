@@ -24,23 +24,23 @@ const PROJECTS: Project[] = [
   },
   {
     id: "PRJ-002",
-    title: "RisexCreative",
-    desc: "Modern cinematic agency portfolio with immersive UI, responsive layouts and polished frontend animations.",
-    img: "/images/project2.png",
-    tags: ["Next.js", "Tailwind"],
-    repo: "https://github.com/ijawadahmadcs/risexcreative",
-    live: "https://risexcreative.com/",
-    color: "secondary",
-  },
-  {
-    id: "PRJ-003",
     title: "IdeasPlanner",
     desc: "Professional UI redesign focused on improved navigation, contact flows and responsive experience.",
-    img: "/images/project3.png",
+    img: "/images/project2.PNG",
     tags: ["Next.js", "UI/UX"],
     repo: "https://github.com/ijawadahmadcs/ideasplanner",
     live: "https://ideasplanner.vercel.app",
     color: "primary",
+  },
+  {
+    id: "PRJ-003",
+    title: "RisexCreative",
+    desc: "Modern cinematic agency portfolio with immersive UI, responsive layouts and polished frontend animations.",
+    img: "/images/project3.PNG",
+    tags: ["Next.js", "Tailwind"],
+    repo: "https://github.com/ijawadahmadcs/risexcreative",
+    live: "https://risexcreative.com/",
+    color: "secondary",
   },
   {
     id: "PRJ-004",
@@ -147,7 +147,7 @@ function ProjectCard({ project }: { project: Project }) {
           className="object-cover group-hover:scale-105 transition-transform duration-700"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent" />
 
         <span
           className={`absolute top-4 right-4 text-[10px] px-3 py-1 rounded-full uppercase tracking-widest ${styles.badge}`}

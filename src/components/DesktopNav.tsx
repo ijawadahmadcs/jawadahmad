@@ -54,7 +54,7 @@ function DesktopNav() {
 
               {/* Active underline animation */}
               <span
-                className={`absolute left-1/2 -bottom-1 h-[2px] bg-primary transition-all duration-300 ${
+                className={`absolute left-1/2 -bottom-1 h-0.5 bg-primary transition-all duration-300 ${
                   isActive
                     ? "w-8 -translate-x-1/2 opacity-100"
                     : "w-0 opacity-0"
